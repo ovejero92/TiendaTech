@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: green;
+        }
+        #muy-especifico{
+            color:violet;
+        }
+        .especial{
+            color:red;
+        }
+        p {
+            color: blue !important;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Heremcia y especificidad</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, rem.</p>
+    <p class="especial">Lorem, ipsum dolor.</p>
+    <p class="especial" id="muy-especifico">Lorem ipsum dolor sit amet.</p>
+    <div>Lkasjdlakjdadjaljdaklsdjalkjd</div>
+</body>
+</html>

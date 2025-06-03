@@ -1,0 +1,29 @@
+<style>
+  body {
+    font-family: Arial;
+    background: lightgray;
+  }
+
+  @media print {
+    body {
+      background: white;
+      color: black;
+    }
+
+    header, footer, nav {
+      display: none;
+    }
+
+    main {
+      width: 100%;
+    }
+  }
+</style>
+
+<body>
+  <header>Este encabezado no se imprimirá</header>
+  <main>Este contenido sí se imprimirá</main>
+  <footer>Este pie de página tampoco se imprimirá</footer>
+</body>
+
+<!--Abrir la pagina y poner ctrl+P -->

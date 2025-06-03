@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja{
+        width:90px;
+        height:90px;
+        margin:10px;
+        background-color: red;
+    }
+    .esp{
+        transform: translate(400px);
+        transition: border-radius 200ms ease;
+        animation:mov 2s ease-in ;
+        }
+    .esp2:hover {
+        border-radius:20px;
+        background-color: blue;
+        font-size: 50px;
+        transition: font-size  2s ease-in-out;
+    }
+    @keyframes mov {
+        0%{background-color: green; transform: translate(100px);}
+        25%{}
+        50%{}
+        75%{}
+        100%{}
+    }
+    </style>
+</head>
+<body>
+    <div class="caja esp"></div>
+    <div class="caja"></div>
+    <div class="caja esp2">aslkdjakjhdask</div>
+    
+</body>
+</html>

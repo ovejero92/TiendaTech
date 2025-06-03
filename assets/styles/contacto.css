@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#333;
+    height: 1900px;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    padding: 16px;
+    position:sticky;
+    top:0;
+    z-index: 11;
+}
+h1 {
+    position: relative;
+    z-index: 6;
+    text-shadow: 1px 1px 3px red;
+}
+.gral{
+    position:relative;
+}
+
+.cir{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #222;
+    position: absolute;
+    top:-9px;
+    left: -5px;
+}
+
+nav ul{
+    list-style-type:none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin:5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:white;
+    border: solid 1px lightblue;
+    padding:10px;
+    border-radius: 5px;
+
+    }
+/* MAIN */
+main {
+    padding: 2rem;
+  }
+  
+  /* FORMULARIO */
+  #formulario-contacto {
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+    z-index: 10;
+  }
+  
+  #formulario-contacto h2 {
+    margin-top: 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+  }
+  
+  input[type="submit"] {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  /* FOOTER */
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+  
+.akaya-kanadaka-regular {
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+.tagesschrift-regular {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

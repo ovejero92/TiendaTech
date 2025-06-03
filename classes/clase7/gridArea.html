@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* PRIMERO
+        .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        }
+        SEGUNDA PARTE
+
+        .item {
+        background: lightblue;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+        } 
+        .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px solid black;
+}
+
+.item:nth-child(odd) {
+  background: #ffd;
+}*/
+.layout {
+  display: grid;
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "footer  footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 10px;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  background: #6fa;
+}
+
+aside {
+  grid-area: sidebar;
+  background: #f96;
+}
+
+main {
+  grid-area: main;
+  background: #9cf;
+}
+
+footer {
+  grid-area: footer;
+  background: #ccc;
+}
+
+
+    </style>
+</head>
+<body>
+<!-- PRIMERO
+    <div class="grid-container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  </div> -->
+<div class="layout">
+  <header>Header</header>
+  <aside>Sidebar</aside>
+  <main>Main Content</main>
+  <footer>Footer</footer>
+</div>
+
+</body>
+</html>

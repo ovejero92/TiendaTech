@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gral{
+            width: 100%;
+            display: grid;
+            grid-template-columns:1fr 1.5fr 1fr;
+            grid-template-rows:200px 200px;
+            column-gap: 20px;
+            row-gap:20px;
+            justify-items: center;
+            align-items: end;
+        }
+        .box1,.box2,.box3,.box4,.box5,.box6 {
+            width: 60px;
+            height: 60px;
+            background: red;
+            margin:5px;
+        }
+        .box5{
+            justify-self: end;
+        }
+        .box2{
+            align-self:center;
+        }
+
+        /* @media (max-width:350px){
+              .gral{
+            display: grid;
+            grid-template-columns:35% 15% 50%;
+            grid-template-rows:200px 200px;
+            column-gap: 20px;
+            row-gap:20px;
+        }
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="gral">
+        <div class="box1">akjsdhlajdhaldakdljhasdklahdkla</div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+</body>
+</html>

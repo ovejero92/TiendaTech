@@ -1,0 +1,44 @@
+
+/* animacion logo */
+.navbar-brand {
+  position: relative;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.navbar-brand::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff33;
+  border-radius: 50%;
+  top: -50px;
+  left: 0;
+  z-index: -1;
+  animation: bounce-behind 1.5s ease-out forwards;
+} 
+
+.navbar-brand::after{
+    content: "🥝";
+
+}
+
+
+@keyframes bounce-behind {
+  0% {
+    top: -50px;
+    left: 0;
+    transform: scale(1);
+  }
+  50% {
+    top: 0;
+    left: 50%;
+    transform: scale(1.5);
+  }
+  100% {
+    top: 0;
+    left: 0;
+    transform: scale(1);
+  }
+}
