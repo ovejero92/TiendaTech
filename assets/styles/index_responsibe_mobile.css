@@ -1,0 +1,41 @@
+@media screen and (max-width : 412px) {
+    body{
+        max-width: 412px;
+    }
+    .navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+  }
+  .navbar .container nav {
+    position: absolute;
+    bottom: 0;
+  }
+  .hero {
+    height: 200px;
+    background-image: url('../Images/FlayerHeader_CHICO.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .producto-negro .producto-text,.producto-negro .producto-subtext,.producto-negro .producto-titulo{
+    right: -200px;
+    width: 10px;
+  }
+
+  .producto-negro .btn{
+    left: 170px;
+  }
+
+  .laptop {
+    top: 0px;
+    right: 50px;
+    transform: scale(1);
+    filter: drop-shadow(1px 1px 7px white);
+  }
+
+}

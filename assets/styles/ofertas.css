@@ -42,3 +42,62 @@
     transform: scale(1);
   }
 }
+
+/* animacion card */
+.card {
+  position: relative;
+  border: none;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+  overflow: hidden; 
+}
+.card::before{
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    rgb(255, 153, 0),
+    transparent,
+    rgb(255, 157, 0),
+    transparent,
+    rgb(255, 72, 0)
+  );
+  animation: rotateBorder 4s linear infinite;
+  z-index: 0;
+  top: -50%;
+  left: -50%;
+}
+.card::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background-color: #fff;
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+ .card > * {
+  position: relative;
+  z-index: 2;
+} 
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
